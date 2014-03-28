@@ -3,8 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014 | 多少 ’Blog</title>
+  <title>多少 ’Blog</title>
   <meta name="author" content="John Doe">
+  
+  <meta name="description" content="10进制2进制 
+ 
+ 
+ 
+Decimal:  
+     
+      
+Binary:  
+     
+     
+      
+      
+ 
+var d = document.getElementById(&#39;decimal&#39;);  
+var b = document.getElement">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -47,96 +63,59 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2014</h2>
-
-
-  
-    <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
   
   <div class="post-content">
     <header>
       
-        <div class="icon"></div>
-        <time datetime="2014-03-28T01:55:14.000Z"><a href="/2014/03/28/迟来的18岁/">Mar 28 2014</a></time>
-      
       
   
-    <h1 class="title"><a href="/2014/03/28/迟来的18岁/">迟来的18岁</a></h1>
+    <h1 class="title"></h1>
   
 
     </header>
     <div class="entry">
       
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-03-27T00:01:10.000Z"><a href="/2014/03/27/往日文章已经打包/">Mar 27 2014</a></time>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>10进制<-->2进制</title> 
+</head> 
+ 
+<body> 
+Decimal:  
+    <input type="text" id="decimal" /> 
+    <input type="button" value="to Binary" onclick="return toBinary();" /> <br /> 
+Binary:  
+    <input type="text" id="binary" /> 
+    <input type="button" value="to Decimal" onclick="return toDecimal();" /> 
       
       
-  
-    <h1 class="title"><a href="/2014/03/27/往日文章已经打包/">往日文章已经打包</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h2 id="往日博文已经打包">往日博文已经打包</h2>
-<p>如果你想看关于我以前的博文请点击下方链接吧</p><br><br><br><a href="http://www.itkuo.cn/upload/blog.tar.gz" target="博客打包">blog.tar.gz</a><br><p>(下载之后请用rar打开，压缩包里面的markdown就是日志文件，请用记事本打开吧)</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-03-26T12:29:01.000Z"><a href="/2014/03/26/博客换程序，幸好博文还不是很多/">Mar 26 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/03/26/博客换程序，幸好博文还不是很多/">博客换程序，幸好博文还不是很多</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>博客换程序了，之前的程序因为生成速度过慢所以被我抛弃，现在用nodejs做，还不错</p><br><p>开始认真写博客吧，之前的文章我看还能不能恢复</p>
+<script type="text/javascript"> 
+var d = document.getElementById('decimal');  
+var b = document.getElementById('binary');  
+ 
+function toBinary() {  
+    var num = d.value;  
+    if (isNaN(num) || !num) {  
+        d.value = "";  
+        return false;  
+    }  
+    b.value = (parseInt(num)).toString(2);  
+}  
+ 
+function toDecimal() {  
+    var num = b.value;  
+    if (isNaN(num) || !num) {  
+        b.value = "";  
+        return false;  
+    }  
+    d.value = parseInt(num, 2);  
+}  
+</script> 
+</body> 
+</html> 
 
       
     </div>
@@ -144,6 +123,9 @@
       
         
         
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -151,48 +133,24 @@
 </article>
 
 
+<section id="comment">
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshaoisblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
 
 
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-03-20T18:13:50.000Z"><a href="/2014/03/21/new-post/">Mar 21 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/03/21/new-post/">New Post</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
