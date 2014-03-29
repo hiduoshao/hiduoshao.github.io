@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-03-29T22:15:14.023Z</updated>
+  <updated>2014-03-29T22:18:08.934Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -19,15 +19,15 @@
     <link href="http://www.itkuo.cn/2014/03/30/kali%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/"/>
     <id>http://www.itkuo.cn/2014/03/30/kali问题解决记录/</id>
     <published>2014-03-29T22:02:29.000Z</published>
-    <updated>2014-03-29T22:14:50.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="Kali安装完成后有许多问题需要解决，开个文章记录下">Kali安装完成后有许多问题需要解决，开个文章记录下</h2>
+    <updated>2014-03-29T22:17:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Kali安装完成后有许多问题需要解决，开个文章记录下(持续更新)">Kali安装完成后有许多问题需要解决，开个文章记录下(持续更新)</h2>
 <p><br><br><b>安装完成后的相关设置</b><br><a href="http://www.2cto.com/Article/201304/200418.html" target="_blank">Kali Linux 1.0 新手折腾笔记</a><br><a id="more"></a></p>
 <p><b>Kali root直接登陆Kali</b></p>
 <p>编辑/etc/gdm3/daemon.conf<br>去除文件中7、8行注释<br>保存即可</p><br><b>Kali安装双显卡</b><br><p>直接给链接吧<a href="http://tieba.baidu.com/p/2847822118" target="_blank">kalilinux 安装双显卡驱动</a><br>但是完成之后运行<code>lspci |grep VGA</code>没有显示出NVIDIA相关，而且利用optirun运行程序失败</p>
 
 
 ]]></content>
-    <summary type="html"><![CDATA[<h2 id="Kali安装完成后有许多问题需要解决，开个文章记录下">Kali安装完成后有许多问题需要解决，开个文章记录下</h2>
+    <summary type="html"><![CDATA[<h2 id="Kali安装完成后有许多问题需要解决，开个文章记录下(持续更新)">Kali安装完成后有许多问题需要解决，开个文章记录下(持续更新)</h2>
 <p><br><br><b>安装完成后的相关设置</b><br><a href="http://www.2cto.com/Article/201304/200418.html" target="_blank">Kali Linux 1.0 新手折腾笔记</a><br>]]></summary>
     
       <category term="Kali" scheme="http://www.itkuo.cn/tags/Kali/"/>
