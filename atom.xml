@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-03-31T00:51:28.817Z</updated>
+  <updated>2014-03-31T00:56:57.569Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -19,13 +19,13 @@
     <link href="http://www.itkuo.cn/2014/03/31/%E8%BD%BB%E6%9D%BE%E7%BB%95%E5%90%84%E7%A7%8Dwaf%E7%9A%84post%E6%B3%A8%E5%85%A5%E3%80%81%E8%B7%A8%E7%AB%99%E9%98%B2%E5%BE%A1(%E6%AF%94%E5%A6%82%E5%AE%89%E5%85%A8%E7%8B%97)/"/>
     <id>http://www.itkuo.cn/2014/03/31/轻松绕各种waf的post注入、跨站防御(比如安全狗)/</id>
     <published>2014-03-31T00:37:21.000Z</published>
-    <updated>2014-03-31T00:50:13.000Z</updated>
-    <content type="html"><![CDATA[<p><p>XXX之前有提过multipart请求绕过各种WAF方式：<a href="http://wooyun.org/bugs/wooyun-2010-044349" target="_blank">360网站宝/安全宝/加速乐及其他类似产品防护绕过缺陷之一</a>，貌似没引起多少人关注。今天发现安全狗变聪明了以前那套他不吃了，不过随手给狗提交了一个二进制的文件域就XXOO了。注意一定要是二进制文件，图片、压缩包什么的都行。<br>构建如下HTML表单： </p><br><img src="/imgs/20140331code1.jpg"></p>
+    <updated>2014-03-31T00:56:33.000Z</updated>
+    <content type="html"><![CDATA[<p><p>XXX之前有提过multipart请求绕过各种WAF方式：<a href="http://wooyun.org/bugs/wooyun-2010-044349" target="_blank">360网站宝/安全宝/加速乐及其他类似产品防护绕过缺陷之一</a>，貌似没引起多少人关注。今天发现安全狗变聪明了以前那套他不吃了，不过随手给狗提交了一个二进制的文件域就XXOO了。注意一定要是二进制文件，图片、压缩包什么的都行。<br>构建如下HTML表单： </p><br><img src="/imgs/upload/20140331code1.jpg"></p>
 <p><br></p>
 <p><p>index.php: </p><br><code>&lt;?php<br>  echo “POST-ID:”.$_POST[‘id’].”<br/>GET-ID:”.$_GET[‘id’];<br>?&gt;<br></code><br><br></p>
-<p><p>提交如下请求： </p><br><img src="http://wzone.sinaapp.com/upload/image/201403/2014033019303584922.png"></p>
+<p><p>提交如下请求： </p><br><img src="/imgs/upload/20140331pot1.jpg"></p>
 <p><br></p>
-<p><p>提交带二进制文件的请求： </p><br><img src="http://wzone.sinaapp.com/upload/image/201403/2014033019304894658.png"></p>
+<p><p>提交带二进制文件的请求： </p><br><img src="/imgs/upload/20140331pot2.jpg"></p>
 <p>本文转自:<a href="http://zone.wooyun.org/content/11423" target="_blank">http://zone.wooyun.org/content/11423</a></p>
 ]]></content>
     
