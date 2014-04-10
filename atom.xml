@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-04-09T13:04:55.770Z</updated>
+  <updated>2014-04-10T03:27:22.679Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.itkuo.cn/2014/04/09/%E5%85%B3%E4%BA%8Eopenssl%E2%80%9C%E5%BF%83%E8%84%8F%E5%87%BA%E8%A1%80%E2%80%9D%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%86%E6%9E%90/"/>
     <id>http://www.itkuo.cn/2014/04/09/关于openssl“心脏出血”漏洞的分析/</id>
     <published>2014-04-09T12:52:35.000Z</published>
-    <updated>2014-04-09T13:04:29.000Z</updated>
+    <updated>2014-04-10T03:26:56.000Z</updated>
     <content type="html"><![CDATA[<h2 id="0x00_背景">0x00 背景</h2>
 <p>原作者：Sean Cassidy 原作者Twitter：@ex509 原作者博客：<a href="http://blog.existentialize.com" target="_blank">http://blog.existentialize.com</a> 来源：<a href="http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html" target="_blank">http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html</a></p><br><p>当我分析GnuTLS的漏洞的时候，我曾经说过，那不会是我们看到的最后一个TLS栈上的严重bug。然而我没想到这次OpenSSL的bug会如此严重。</p><br><p>OpenSSL“心脏出血”漏洞是一个非常严重的问题。这个漏洞使攻击者能够从内存中读取多达64 KB的数据。一些安全研究员表示：</p><br><b>无需任何特权信息或身份验证，我们就可以从我们自己的（测试机上）偷来X.509证书的私钥、用户名与密码、聊天工具的消息、电子邮件以及重要的商业文档和通信等数据。</b><br><a id="more"></a><br><p>这一切是如何发生的呢？让我们一起从代码中一探究竟吧。</p><br>## 0x01 Bug<br><br><p>请看ssl/dl_both.c，漏洞的补丁从这行语句开始：</p><br><code>int<br>dtls1_process_heartbeat(SSL <em>s)<br><br>    {          <br><br>    unsigned char </em>p = &amp;s-&gt;s3-&gt;rrec.data[0], <em>pl;<br><br>    unsigned short hbtype;<br><br>    unsigned int payload;<br><br>    unsigned int padding = 16; /</em> Use minimum padding */</code><br><p>一上来我们就拿到了一个指向一条SSLv3记录中数据的指针。结构体SSL3_RECORD的定义如下（译者注：结构体SSL3_RECORD不是SSLv3记录的实际存储格式。一条SSLv3记录所遵循的存储格式请参见下文分析）：</p>
 
@@ -40,6 +40,7 @@
 <p><p>从GnuTLS漏洞和这个漏洞出发，我认为我们应当做到下面三条：</p><br><b>花钱请人对像OpenSSL这样的关键安全基础设施进行安全审计；<br><br>为这些库写大量的单元测试和综合测试；<br><br>开始在更安全的语言中编写替代品。</b></p>
 <p><p>考虑到使用C语言进行安全编程的困难性，我不认为还有什么其他的解决方案。我会试着做这些，你呢？</p></p>
 <p><p>作者简介：Sean是一位关于如何把事儿干好的软件工程师。现在他在Squadron工作。Squadron是一个专为SaaS应用程序准备的配置与发布管理工具。</p><br><b>测试版本的结果以及检测工具：</b><br><br><br><b>OpenSSL 1.0.1 through 1.0.1f (inclusive) are vulnerable<br><br>OpenSSL 1.0.1g is NOT vulnerable<br><br>OpenSSL 1.0.0 branch is NOT vulnerable<br><br>OpenSSL 0.9.8 branch is NOT vulnerable</b></p>
+<p><code>dsdd<br>dsdsds<br>dsdsd<br>dsdsds<br></code></p>
 ]]></content>
     <summary type="html"><![CDATA[<h2 id="0x00_背景">0x00 背景</h2>
 <p>原作者：Sean Cassidy 原作者Twitter：@ex509 原作者博客：<a href="http://blog.existentialize.com" target="_blank">http://blog.existentialize.com</a> 来源：<a href="http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html" target="_blank">http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html</a></p><br><p>当我分析GnuTLS的漏洞的时候，我曾经说过，那不会是我们看到的最后一个TLS栈上的严重bug。然而我没想到这次OpenSSL的bug会如此严重。</p><br><p>OpenSSL“心脏出血”漏洞是一个非常严重的问题。这个漏洞使攻击者能够从内存中读取多达64 KB的数据。一些安全研究员表示：</p><br><b>无需任何特权信息或身份验证，我们就可以从我们自己的（测试机上）偷来X.509证书的私钥、用户名与密码、聊天工具的消息、电子邮件以及重要的商业文档和通信等数据。</b><br>]]></summary>
