@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-04-11T08:31:45.322Z</updated>
+  <updated>2014-04-15T07:05:20.463Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,23 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[修改魅族Mx2 smartbar颜色]]></title>
+    <link href="http://www.itkuo.cn/2014/04/15/%E4%BF%AE%E6%94%B9%E9%AD%85%E6%97%8Fmx2-smartbar%E9%A2%9C%E8%89%B2/"/>
+    <id>http://www.itkuo.cn/2014/04/15/修改魅族mx2-smartbar颜色/</id>
+    <published>2014-04-15T06:53:36.000Z</published>
+    <updated>2014-04-15T07:03:30.000Z</updated>
+    <content type="html"><![CDATA[<p>是否厌倦了smartbar单调的黑色，想换换颜色，今天就交大家如何换颜色</p><br><a id="more"></a><br><p>首先你需要的是将framework-res.apk文件从魅族手机目录中提取出来，framework-res.apk文件存在于framework目录下，我们将framework-res.apk文件提取出来到电脑桌面<br>如图：<img src="/imgs/jietu1.jpg"> </p>
+
+<p>之后我们用rar软件打开apk包，找到res\drawable-sw400dp-xhdpi目录中的list_selector_background_longpress_light.9.png、list_selector_pressed_holo_light.9.png、tab_background_mz.9.png这三个文件，提取出来，之后用美图秀秀或者ps改一下颜色<br>如图:<img src="/imgs/jietu2.jpg"></p><br><p>最后我们将修改完成后的图片替换回apk中的res\drawable-sw400dp-xhdpi目录和drawable-xhdpi目录中即可，完成以上操作之后，将apk包放回手机原位替换掉原来的，之后重启手机就能看到变化啦！</p>
+
+]]></content>
+    <summary type="html"><![CDATA[<p>是否厌倦了smartbar单调的黑色，想换换颜色，今天就交大家如何换颜色</p><br>]]></summary>
+    
+      <category term="手机" scheme="http://www.itkuo.cn/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[如何成为一个很厉害的人（转）]]></title>
