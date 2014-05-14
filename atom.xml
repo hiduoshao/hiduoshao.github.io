@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-05-14T12:41:46.982Z</updated>
+  <updated>2014-05-14T12:54:22.573Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,20 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[NFS参数记录]]></title>
+    <link href="http://www.itkuo.cn/2014/05/14/nfs%E5%8F%82%E6%95%B0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://www.itkuo.cn/2014/05/14/nfs参数记录/</id>
+    <published>2014-05-14T12:51:33.000Z</published>
+    <updated>2014-05-14T12:53:55.000Z</updated>
+    <content type="html"><![CDATA[<p>  ro                      只读访问 <br><br>            rw                      读写访问<br><br><br>            sync                    所有数据在请求时写入共享<br><a id="more"></a><br><br><br>            async                   NFS在写入数据前可以相应请求<br><br><br>            secure                  NFS通过1024以下的安全TCP/IP端口发送<br><br><br>            insecure                NFS通过1024以上的端口发送<br><br><br>            wdelay                  如果多个用户要写入NFS目录，则归组写入（默认）<br><br><br>            no_wdelay               如果多个用户要写入NFS目录，则立即写入，当使用async时，无需此设置。<br><br><br>            hide                    在NFS共享目录中不共享其子目录<br><br><br>            no_hide                 共享NFS目录的子目录<br><br><br>            subtree_check           如果共享/usr/bin之类的子目录时，强制NFS检查父目录的权限（默认）<br><br><br>            no_subtree_check        和上面相对，不检查父目录权限<br><br><br>            all_squash              共享文件的UID和GID映射匿名用户anonymous，适合公用目录。<br><br><br>            no_all_squash           保留共享文件的UID和GID（默认）<br><br><br>            root_squash             root用户的所有请求映射成如anonymous用户一样的权限（默认）<br><br><br>            no_root_squas           root用户具有根目录的完全管理访问权限<br><br><br>            anonuid=xxx             指定NFS服务器/etc/passwd文件中匿名用户的UID<br><br><br><br>            anongid=xxx             指定NFS服务器/etc/passwd文件中匿名用户的GID </p>
+]]></content>
+    <summary type="html"><![CDATA[<p>  ro                      只读访问 <br><br>            rw                      读写访问<br><br><br>            sync                    所有数据在请求时写入共享<br>]]></summary>
+    
+      <category term="Linux" scheme="http://www.itkuo.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[由小米数据泄漏带来的数据泄漏的思考]]></title>
