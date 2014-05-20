@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>往日文章已经打包 | 多少 ’Blog</title>
+  <title>Cron格式 | 多少 ’Blog</title>
   <meta name="author" content="John Doe">
   
-  <meta name="description" content="往日博文已经打包
-如果你想看关于我以前的博文请点击下方链接吧blog.tar.gz(下载之后请用rar打开，压缩包里面的markdown就是日志文件，请用记事本打开吧)">
+  <meta name="description" content="Linux中Crontab是计划程序
+
+为本身用户创建计划任务是Crontab -e,如果是给指定用户需要是root终端下执行crontab -u user1">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="往日文章已经打包"/>
+  <meta property="og:title" content="Cron格式"/>
   <meta property="og:site_name" content="多少 ’Blog"/>
 
   
@@ -58,18 +59,25 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-03-27T00:01:10.000Z"><a href="/2014/03/27/往日文章已经打包/">Mar 27 2014</a></time>
+        <time datetime="2014-05-20T13:21:51.000Z"><a href="/2014/05/20/cron格式/">May 20 2014</a></time>
       
       
   
-    <h1 class="title">往日文章已经打包</h1>
+    <h1 class="title">Cron格式</h1>
   
 
     </header>
     <div class="entry">
       
-        <h2 id="往日博文已经打包">往日博文已经打包</h2>
-<p>如果你想看关于我以前的博文请点击下方链接吧</p><br><br><br><a href="http://www.itkuo.cn/upload/blog.tar.gz" target="博客打包">blog.tar.gz</a><br><p>(下载之后请用rar打开，压缩包里面的markdown就是日志文件，请用记事本打开吧)</p>
+        <p>Linux中Crontab是计划程序</p>
+
+<p>为本身用户创建计划任务是<code>Crontab -e</code>,如果是给指定用户需要是root终端下执行<code>crontab -u user1</code></p><br><a id="more"></a><br>### crontab格式如下 ###<br><br><p>M: 分钟（0-59）。<br><br><br>H：小时（0-23）。<br><br><br>D：天（1-31）。<br><br><br>m: 月（1-12）。<br><br><br>d: 一星期内的天（0~6，0为星期天）。</p>
+
+
+
+
+<p>比如：<br><code>vim /etc/exports</code><br>写入<code>12 3 <em> </em> 5    /sbin/reboot</code>这段是在星期五的三点12分时候重启机器</p>
+
 
       
     </div>
@@ -79,7 +87,7 @@
         
   
   <div class="tags">
-    <a href="/tags/公告/">公告</a>
+    <a href="/tags/Linux/">Linux</a>
   </div>
 
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
