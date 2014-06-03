@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-06-03T10:28:07.201Z</updated>
+  <updated>2014-06-03T10:42:04.542Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,20 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[练习windows服务器技术时候的困扰]]></title>
+    <link href="http://www.itkuo.cn/2014/06/03/%E7%BB%83%E4%B9%A0windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF%E6%97%B6%E5%80%99%E7%9A%84%E5%9B%B0%E6%89%B0/"/>
+    <id>http://www.itkuo.cn/2014/06/03/练习windows服务器技术时候的困扰/</id>
+    <published>2014-06-03T10:37:39.000Z</published>
+    <updated>2014-06-03T10:41:36.000Z</updated>
+    <content type="html"><![CDATA[<p>每次练习Windows服务器技术的时候总有一个问题困扰着我，特别是Windows 2008，本身windows 2008占用内存很大，如果不给予他较为大的虚拟内存，说是虚拟内存也是从系统内存里调取，这样的话，开一台windows 2008还好，如果三四太虚拟机一起开，不仅仅电脑主机本身卡，而且几台windows 2008同样卡，给的少内存电脑跑得动了，虚拟机不行了，给的多，虚拟机也不行，主机也不行，windows 2008要是没有个2G以上的内存想必是很痛苦的练习之旅吧。</p>
+]]></content>
+    
+    
+      <category term="Windows" scheme="http://www.itkuo.cn/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[关于virtualbox安装完成之后出现的Connot access the kernel driver错误的解决办法]]></title>
@@ -391,21 +405,6 @@
     <summary type="html"><![CDATA[<p>终于到了，终于到了，十八岁，对于一个人来说是成年的标志，我也不例外。</p><br>]]></summary>
     
       <category term="思想" scheme="http://www.itkuo.cn/tags/%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[往日文章已经打包]]></title>
-    <link href="http://www.itkuo.cn/2014/03/27/%E5%BE%80%E6%97%A5%E6%96%87%E7%AB%A0%E5%B7%B2%E7%BB%8F%E6%89%93%E5%8C%85/"/>
-    <id>http://www.itkuo.cn/2014/03/27/往日文章已经打包/</id>
-    <published>2014-03-27T00:01:10.000Z</published>
-    <updated>2014-03-27T00:16:19.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="往日博文已经打包">往日博文已经打包</h2>
-<p>如果你想看关于我以前的博文请点击下方链接吧</p><br><br><br><a href="http://www.itkuo.cn/upload/blog.tar.gz" target="博客打包">blog.tar.gz</a><br><p>(下载之后请用rar打开，压缩包里面的markdown就是日志文件，请用记事本打开吧)</p>
-]]></content>
-    
-    
-      <category term="公告" scheme="http://www.itkuo.cn/tags/%E5%85%AC%E5%91%8A/"/>
     
   </entry>
   
