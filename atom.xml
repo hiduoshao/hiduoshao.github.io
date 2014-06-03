@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-05-31T12:03:21.449Z</updated>
+  <updated>2014-06-03T10:28:07.201Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,20 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[关于virtualbox安装完成之后出现的Connot access the kernel driver错误的解决办法]]></title>
+    <link href="http://www.itkuo.cn/2014/06/03/%E5%85%B3%E4%BA%8Evirtualbox%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E%E5%87%BA%E7%8E%B0%E7%9A%84connot-access-the-kernel-driver%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://www.itkuo.cn/2014/06/03/关于virtualbox安装完成之后出现的connot-access-the-kernel-driver错误的解决办法/</id>
+    <published>2014-06-03T10:24:58.000Z</published>
+    <updated>2014-06-03T10:27:38.000Z</updated>
+    <content type="html"><![CDATA[<p>想必很多童鞋更新或者重装vbox之后安装虚拟机的时候就会出现标题上出现的问题，那么如何解决呢？</p><br><a id="more"></a><br><p>看看方法吧</p><br><p>首先是，进入到C:\Program Files\Oracle\VirtualBox\drivers\vboxdrv文件夹之中，就是你的vbox的目录中的drivers\vboxdrv目录，之后找到vboxdrv.inf文件，双击安装即可解决这个问题。</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>想必很多童鞋更新或者重装vbox之后安装虚拟机的时候就会出现标题上出现的问题，那么如何解决呢？</p><br>]]></summary>
+    
+      <category term="虚拟机" scheme="http://www.itkuo.cn/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[宏观世界，思想的完全自由舒畅]]></title>
@@ -392,20 +406,6 @@
     
     
       <category term="公告" scheme="http://www.itkuo.cn/tags/%E5%85%AC%E5%91%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[博客换程序，幸好博文还不是很多]]></title>
-    <link href="http://www.itkuo.cn/2014/03/26/%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%B9%B8%E5%A5%BD%E5%8D%9A%E6%96%87%E8%BF%98%E4%B8%8D%E6%98%AF%E5%BE%88%E5%A4%9A/"/>
-    <id>http://www.itkuo.cn/2014/03/26/博客换程序，幸好博文还不是很多/</id>
-    <published>2014-03-26T12:29:01.000Z</published>
-    <updated>2014-03-26T12:36:31.000Z</updated>
-    <content type="html"><![CDATA[<p>博客换程序了，之前的程序因为生成速度过慢所以被我抛弃，现在用nodejs做，还不错</p><br><p>开始认真写博客吧，之前的文章我看还能不能恢复</p>
-]]></content>
-    
-    
-      <category term="life" scheme="http://www.itkuo.cn/tags/life/"/>
     
   </entry>
   
