@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-06-11T22:07:12.996Z</updated>
+  <updated>2014-06-11T22:34:34.408Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,23 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[在修改网站速度中值得推荐的一条Linux命令]]></title>
+    <link href="http://www.itkuo.cn/2014/06/12/%E5%9C%A8%E4%BF%AE%E6%94%B9%E7%BD%91%E7%AB%99%E9%80%9F%E5%BA%A6%E4%B8%AD%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.itkuo.cn/2014/06/12/在修改网站速度中值得推荐的一条linux命令/</id>
+    <published>2014-06-11T22:11:38.000Z</published>
+    <updated>2014-06-11T22:34:03.000Z</updated>
+    <content type="html"><![CDATA[<p>最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾</p><br><p>于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是<a href="ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</a>和<a href="html5shiv.googlecode.com/svn/trunk/html5.js">html5shiv.googlecode.com/svn/trunk/html5.js</a>和<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>这三个链接作怪（其实是GFW作怪，哈哈），因为是谷歌的服务器，国内直接咔嚓掉了，于是网站一直加载这三个链接，于是网站卡的要死。</p><br><p>其实知道了这三个链接，以为好办了，但是在修改文件的时候遇到麻烦，根本不知道在哪几个文件修改这三个链接，只从网上找到一处修改，就是字体库的修改，更改<code>themes\modernist\source\css_base\variable.styl</code>其中的<code>@import url(“<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>“)</code>将这句注释掉既可，用//加在这句最前面既可，这个解决了，但是还有两个谷歌链接拖网站速度，怎么办呢，这个时候回到我们的主题，一条Linux命令帮我解决了这个问题。</p><br><p>首先我先，在某些文件中肯定包含着这两个链接，于是，用一下命令，搜索所有文件中包含这两句，那么我们就知道有哪些文件包含了这两个链接</p><br><p>命令如下：</p><br><br><br><br><code>find / -type f -name “<em>.</em>“ |xargs grep “trunk/html5.js” &gt;&gt;/b.txt<br>find / -type f -name “<em>.</em>“ |xargs grep “ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js” &gt;&gt;/c.txt</code><br><br><p>这样，我们就将搜索的内容放到了/目录下的b.txt和c.txt文件，为了好分析，我将这两个文件拖回windows用Notepad++分析，一下就知道改那两个文件了</p>
+
+<p><img src="http://www.itkuo.cn/upload/pic/201407171.jpg" alt="1"></p>
+<p><br><img src="http://www.itkuo.cn/upload/pic/201407172.jpg" alt="2"><br><br><p><br><p>是不是很好用呢！(￣▽￣)</p>
+]]></content>
+    
+    
+      <category term="Linux" scheme="http://www.itkuo.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[幻想的作用]]></title>
@@ -360,43 +377,6 @@
     <summary type="html"><![CDATA[<p>经过长期的学习工作，发现其中探索知识的方式有些问题，这里就说说看书学习和网上资料学习的区别与弊端</p><br>]]></summary>
     
       <category term="思想" scheme="http://www.itkuo.cn/tags/%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[世奇最好的十个故事]]></title>
-    <link href="http://www.itkuo.cn/2014/04/01/%E4%B8%96%E5%A5%87%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8D%81%E4%B8%AA%E6%95%85%E4%BA%8B/"/>
-    <id>http://www.itkuo.cn/2014/04/01/世奇最好的十个故事/</id>
-    <published>2014-04-01T06:09:34.000Z</published>
-    <updated>2014-04-01T06:18:14.000Z</updated>
-    <content type="html"><![CDATA[<p>1.美女罐</p><br><p>他用美女罐生产出了想要的美女，两人相爱了，很快到了保质期，美女消失了，他去找她，没想到自己也是被生产来的。<a href="www.viralvideo.cn/620.html">www.viralvideo.cn/620.html</a></p>
-
-<p>2.Air医生<br><br>这太巧合了吧，但是这真的太好看了，励志加正能量，看得满心欢喜，仿佛一道明亮的光，必须推荐！<a href="www.viralvideo.cn/968.html">www.viralvideo.cn/968.html</a></p><br><a id="more"></a><br><br><p>3.深夜里的杀人犯<br><br>看完该短片，悟出一言，这样的剧情只有日本编剧才能做到。神剧本，超给力，不到最后一刻完全猜不到结局！<a href="www.viralvideo.cn/624.html">www.viralvideo.cn/624.html</a></p>
-
-
-<p>4.雪山凶灵<br><br>公认为世界奇妙物语里恐怖之最，99%的人看完之后仍无比费解，结局耐人寻味，不可多得的神短片，强荐。<a href="www.viralvideo.cn/910.html">www.viralvideo.cn/910.html</a></p>
-
-<p>5.推理出租车<br><br>在出租车这么狭小的空间里完成两起杀人案件的绝妙推理，这是何等神奇的编剧，日本的编剧再一次完成了御室推理。<a href="www.viralvideo.cn/662.html">www.viralvideo.cn/662.html</a></p>
-
-
-<p>6.拘役30天<br><br>这是个令人震撼的故事，一个丧心病狂的杀人犯竟然只被判刑30天，这也太不公平了吧，不过真是这样的吗？<a href="www.viralvideo.cn/1051.html">www.viralvideo.cn/1051.html</a></p>
-
-
-<p>7.厕所的涂鸦<br><br>日本国民大神木村拓哉的个人演技秀短片，主要剧情基本就厕所里完成，堪称佳作，后来的港片恐怖片皆按照这个套路。<a href="www.viralvideo.cn/628.html">www.viralvideo.cn/628.html</a></p>
-
-<p>8.自杀者回收法<br><br>一个因对自己的人生感到失望而选择自杀的青年，在坠落过程中被某机构回收，然而万劫不复，奇异的设定，神剧本！<a href="www.viralvideo.cn/658.html">www.viralvideo.cn/658.html</a></p>
-
-
-<p>9.垃圾女<br><br>在捡垃圾的婆婆处，发现满载自己的回忆的物品，和不可告人的秘密，在垃圾中找到我们的人生，神剧本！<a href="www.viralvideo.cn/866.html">www.viralvideo.cn/866.html</a></p>
-
-
-<p>10.奶奶<br><br>看的途中真是没的说，故事引人入胜，细节处理的合理又贴心，可是结局感动全无，简直是毛骨悚然哪，这才是神剧本。<a href="www.viralvideo.cn/914.html">www.viralvideo.cn/914.html</a></p>
-]]></content>
-    <summary type="html"><![CDATA[<p>1.美女罐</p><br><p>他用美女罐生产出了想要的美女，两人相爱了，很快到了保质期，美女消失了，他去找她，没想到自己也是被生产来的。<a href="www.viralvideo.cn/620.html">www.viralvideo.cn/620.html</a></p>
-
-<p>2.Air医生<br><br>这太巧合了吧，但是这真的太好看了，励志加正能量，看得满心欢喜，仿佛一道明亮的光，必须推荐！<a href="www.viralvideo.cn/968.html">www.viralvideo.cn/968.html</a></p><br>]]></summary>
-    
-      <category term="影像人生" scheme="http://www.itkuo.cn/tags/%E5%BD%B1%E5%83%8F%E4%BA%BA%E7%94%9F/"/>
     
   </entry>
   

@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>修改魅族Mx2 smartbar颜色 | 多少 ’Blog</title>
+  <title>在修改网站速度中值得推荐的一条Linux命令 | 多少 ’Blog</title>
   <meta name="author" content="John Doe">
   
-  <meta name="description" content="是否厌倦了smartbar单调的黑色，想换换颜色，今天就交大家如何换颜色">
+  <meta name="description" content="最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js和html5shiv.googl">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="修改魅族Mx2 smartbar颜色"/>
+  <meta property="og:title" content="在修改网站速度中值得推荐的一条Linux命令"/>
   <meta property="og:site_name" content="多少 ’Blog"/>
 
   
@@ -57,20 +57,20 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-04-15T06:53:36.000Z"><a href="/2014/04/15/修改魅族mx2-smartbar颜色/">Apr 15 2014</a></time>
+        <time datetime="2014-06-11T22:11:38.000Z"><a href="/2014/06/12/在修改网站速度中值得推荐的一条linux命令/">Jun 12 2014</a></time>
       
       
   
-    <h1 class="title">修改魅族Mx2 smartbar颜色</h1>
+    <h1 class="title">在修改网站速度中值得推荐的一条Linux命令</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>是否厌倦了smartbar单调的黑色，想换换颜色，今天就交大家如何换颜色</p><br><a id="more"></a><br><p>首先你需要的是将framework-res.apk文件从魅族手机目录中提取出来，framework-res.apk文件存在于framework目录下，我们将framework-res.apk文件提取出来到电脑桌面<br>如图：<img src="/imgs/jietu1.jpg"> </p>
+        <p>最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾</p><br><p>于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是<a href="ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</a>和<a href="html5shiv.googlecode.com/svn/trunk/html5.js">html5shiv.googlecode.com/svn/trunk/html5.js</a>和<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>这三个链接作怪（其实是GFW作怪，哈哈），因为是谷歌的服务器，国内直接咔嚓掉了，于是网站一直加载这三个链接，于是网站卡的要死。</p><br><p>其实知道了这三个链接，以为好办了，但是在修改文件的时候遇到麻烦，根本不知道在哪几个文件修改这三个链接，只从网上找到一处修改，就是字体库的修改，更改<code>themes\modernist\source\css_base\variable.styl</code>其中的<code>@import url(“<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>“)</code>将这句注释掉既可，用//加在这句最前面既可，这个解决了，但是还有两个谷歌链接拖网站速度，怎么办呢，这个时候回到我们的主题，一条Linux命令帮我解决了这个问题。</p><br><p>首先我先，在某些文件中肯定包含着这两个链接，于是，用一下命令，搜索所有文件中包含这两句，那么我们就知道有哪些文件包含了这两个链接</p><br><p>命令如下：</p><br><br><br><br><code>find / -type f -name “<em>.</em>“ |xargs grep “trunk/html5.js” &gt;&gt;/b.txt<br>find / -type f -name “<em>.</em>“ |xargs grep “ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js” &gt;&gt;/c.txt</code><br><br><p>这样，我们就将搜索的内容放到了/目录下的b.txt和c.txt文件，为了好分析，我将这两个文件拖回windows用Notepad++分析，一下就知道改那两个文件了</p>
 
-<p>之后我们用rar软件打开apk包，找到res\drawable-sw400dp-xhdpi目录中的list_selector_background_longpress_light.9.png、list_selector_pressed_holo_light.9.png、tab_background_mz.9.png这三个文件，提取出来，之后用美图秀秀或者ps改一下颜色<br>如图:<img src="/imgs/jietu2.jpg"></p><br><p>最后我们将修改完成后的图片替换回apk中的res\drawable-sw400dp-xhdpi目录和drawable-xhdpi目录中即可，完成以上操作之后，将apk包放回手机原位替换掉原来的，之后重启手机就能看到变化啦！</p>
-
+<p><img src="http://www.itkuo.cn/upload/pic/201407171.jpg" alt="1"></p>
+<p><br><img src="http://www.itkuo.cn/upload/pic/201407172.jpg" alt="2"><br><br><p><br><p>是不是很好用呢！(￣▽￣)</p>
 
       
     </div>
@@ -80,7 +80,7 @@
         
   
   <div class="tags">
-    <a href="/tags/手机/">手机</a>
+    <a href="/tags/Linux/">Linux</a>
   </div>
 
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
