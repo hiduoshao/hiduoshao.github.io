@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-06-11T22:34:34.408Z</updated>
+  <updated>2014-06-11T22:37:19.883Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -19,13 +19,13 @@
     <link href="http://www.itkuo.cn/2014/06/12/%E5%9C%A8%E4%BF%AE%E6%94%B9%E7%BD%91%E7%AB%99%E9%80%9F%E5%BA%A6%E4%B8%AD%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4/"/>
     <id>http://www.itkuo.cn/2014/06/12/在修改网站速度中值得推荐的一条linux命令/</id>
     <published>2014-06-11T22:11:38.000Z</published>
-    <updated>2014-06-11T22:34:03.000Z</updated>
-    <content type="html"><![CDATA[<p>最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾</p><br><p>于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是<a href="ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</a>和<a href="html5shiv.googlecode.com/svn/trunk/html5.js">html5shiv.googlecode.com/svn/trunk/html5.js</a>和<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>这三个链接作怪（其实是GFW作怪，哈哈），因为是谷歌的服务器，国内直接咔嚓掉了，于是网站一直加载这三个链接，于是网站卡的要死。</p><br><p>其实知道了这三个链接，以为好办了，但是在修改文件的时候遇到麻烦，根本不知道在哪几个文件修改这三个链接，只从网上找到一处修改，就是字体库的修改，更改<code>themes\modernist\source\css_base\variable.styl</code>其中的<code>@import url(“<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>“)</code>将这句注释掉既可，用//加在这句最前面既可，这个解决了，但是还有两个谷歌链接拖网站速度，怎么办呢，这个时候回到我们的主题，一条Linux命令帮我解决了这个问题。</p><br><p>首先我先，在某些文件中肯定包含着这两个链接，于是，用一下命令，搜索所有文件中包含这两句，那么我们就知道有哪些文件包含了这两个链接</p><br><p>命令如下：</p><br><br><br><br><code>find / -type f -name “<em>.</em>“ |xargs grep “trunk/html5.js” &gt;&gt;/b.txt<br>find / -type f -name “<em>.</em>“ |xargs grep “ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js” &gt;&gt;/c.txt</code><br><br><p>这样，我们就将搜索的内容放到了/目录下的b.txt和c.txt文件，为了好分析，我将这两个文件拖回windows用Notepad++分析，一下就知道改那两个文件了</p>
+    <updated>2014-06-11T22:36:50.000Z</updated>
+    <content type="html"><![CDATA[<p>最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾</p><br><p>于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是<a href="ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</a>和<a href="html5shiv.googlecode.com/svn/trunk/html5.js">html5shiv.googlecode.com/svn/trunk/html5.js</a>和<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>这三个链接作怪（其实是GFW作怪，哈哈），因为是谷歌的服务器，国内直接咔嚓掉了，于是网站一直加载这三个链接，于是网站卡的要死。</p><br><a id="more"></a><br><p>其实知道了这三个链接，以为好办了，但是在修改文件的时候遇到麻烦，根本不知道在哪几个文件修改这三个链接，只从网上找到一处修改，就是字体库的修改，更改<code>themes\modernist\source\css_base\variable.styl</code>其中的<code>@import url(“<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>“)</code>将这句注释掉既可，用//加在这句最前面既可，这个解决了，但是还有两个谷歌链接拖网站速度，怎么办呢，这个时候回到我们的主题，一条Linux命令帮我解决了这个问题。</p><br><p>首先我先，在某些文件中肯定包含着这两个链接，于是，用一下命令，搜索所有文件中包含这两句，那么我们就知道有哪些文件包含了这两个链接</p><br><p>命令如下：</p><br><br><br><br><code>find / -type f -name “<em>.</em>“ |xargs grep “trunk/html5.js” &gt;&gt;/b.txt<br>find / -type f -name “<em>.</em>“ |xargs grep “ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js” &gt;&gt;/c.txt</code><br><br><p>这样，我们就将搜索的内容放到了/目录下的b.txt和c.txt文件，为了好分析，我将这两个文件拖回windows用Notepad++分析，一下就知道改那两个文件了</p>
 
 <p><img src="http://www.itkuo.cn/upload/pic/201407171.jpg" alt="1"></p>
 <p><br><img src="http://www.itkuo.cn/upload/pic/201407172.jpg" alt="2"><br><br><p><br><p>是不是很好用呢！(￣▽￣)</p>
 ]]></content>
-    
+    <summary type="html"><![CDATA[<p>最近因为网站访问速度很慢，所以被学弟嘲笑，说我网站速度垃圾</p><br><p>于是乎开始整顿，回过头来发现，其实问题所在还是网站加载了谷歌的字体和JQ，通过网站速度分析，一直是<a href="ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</a>和<a href="html5shiv.googlecode.com/svn/trunk/html5.js">html5shiv.googlecode.com/svn/trunk/html5.js</a>和<a href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700" target="_blank">https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700</a>这三个链接作怪（其实是GFW作怪，哈哈），因为是谷歌的服务器，国内直接咔嚓掉了，于是网站一直加载这三个链接，于是网站卡的要死。</p><br>]]></summary>
     
       <category term="Linux" scheme="http://www.itkuo.cn/tags/Linux/"/>
     
