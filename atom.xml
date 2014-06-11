@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-06-03T10:42:04.542Z</updated>
+  <updated>2014-06-11T08:12:19.655Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -13,6 +13,17 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[全球谷歌缓存地址]]></title>
+    <link href="http://www.itkuo.cn/2014/06/03/%E5%85%A8%E7%90%83%E8%B0%B7%E6%AD%8C%E7%BC%93%E5%AD%98%E5%9C%B0%E5%9D%80/"/>
+    <id>http://www.itkuo.cn/2014/06/03/全球谷歌缓存地址/</id>
+    <published>2014-06-03T10:49:43.000Z</published>
+    <updated>2014-06-03T10:49:43.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+  </entry>
   
   <entry>
     <title><![CDATA[练习windows服务器技术时候的困扰]]></title>
@@ -391,20 +402,6 @@
 <p><br><br><b>安装完成后的相关设置</b><br><a href="http://www.2cto.com/Article/201304/200418.html" target="_blank">Kali Linux 1.0 新手折腾笔记</a><br>]]></summary>
     
       <category term="Kali" scheme="http://www.itkuo.cn/tags/Kali/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[迟来的18岁]]></title>
-    <link href="http://www.itkuo.cn/2014/03/28/%E8%BF%9F%E6%9D%A5%E7%9A%8418%E5%B2%81/"/>
-    <id>http://www.itkuo.cn/2014/03/28/迟来的18岁/</id>
-    <published>2014-03-28T01:55:14.000Z</published>
-    <updated>2014-03-29T01:33:27.000Z</updated>
-    <content type="html"><![CDATA[<p>终于到了，终于到了，十八岁，对于一个人来说是成年的标志，我也不例外。</p><br><a id="more"></a><br><p>想了想为什么要用这个标题呢，因为我觉得，因为思想上我觉得早已到达十八岁，这是成熟的表现吗，但是我不敢说成熟，经历才是成熟的真正标志，未来的道路将会是验证成熟的道路。十八年间，说实话也没经历过什么惊心动魄的事情，生活平平淡淡，学习上一直处于弱势，反倒是思想上变化比较大，初中开始，就慢慢思想发生改变，开始感觉与同龄人不那么相同，而且心里想也不想和大众相同，这种思想的变化可能是因为家庭的教育，网络对我的影响等等，但到此刻，我也觉得这有什么不好，如果其中有不好的思想或性格，我会察觉，但，不容易改，希望往日的生活中能够真正意识到这些不好性格和思想对我的危害。</p><br><p>最后，也不知道说什么好，感谢父亲母亲在过去十八年里对我的养育之恩吧</p>
-]]></content>
-    <summary type="html"><![CDATA[<p>终于到了，终于到了，十八岁，对于一个人来说是成年的标志，我也不例外。</p><br>]]></summary>
-    
-      <category term="思想" scheme="http://www.itkuo.cn/tags/%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
