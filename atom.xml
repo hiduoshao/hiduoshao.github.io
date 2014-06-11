@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一个伪文艺伪技术的少年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.itkuo.cn/"/>
-  <updated>2014-06-11T09:07:00.321Z</updated>
+  <updated>2014-06-11T11:02:23.709Z</updated>
   <id>http://www.itkuo.cn/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://www.itkuo.cn/2014/06/03/%E5%85%A8%E7%90%83%E8%B0%B7%E6%AD%8C%E7%BC%93%E5%AD%98%E5%9C%B0%E5%9D%80/"/>
     <id>http://www.itkuo.cn/2014/06/03/全球谷歌缓存地址/</id>
     <published>2014-06-03T10:49:43.000Z</published>
-    <updated>2014-06-11T09:06:31.000Z</updated>
-    <content type="html"><![CDATA[<p>你还为经常找不到好用的google可用地址烦恼吗，你还经常骂墙吗，有了以下这个东西，你再也不用担心了。</p><br><p>给出一个全球谷歌缓存的ip：</p><br><a herf="http://www.itkuo.cn/admin/sgoogle.html">谷歌全球缓存ip</a><br><br><p>你可以把hosts文件更改了，随便选一个更改为google的ip</p>
+    <updated>2014-06-11T11:01:53.000Z</updated>
+    <content type="html"><![CDATA[<p>你还为经常找不到好用的google可用地址烦恼吗，你还经常骂墙吗，有了以下这个东西，你再也不用担心了。</p><br><p>给出一个全球谷歌缓存的ip：</p><br><a href="http://www.itkuo.cn/admin/sgoogle.html">谷歌全球缓存ip</a><br><br><p>你可以把hosts文件更改了，随便选一个更改为google的ip</p>
 ]]></content>
     
     
